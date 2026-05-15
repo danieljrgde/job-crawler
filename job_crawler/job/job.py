@@ -33,7 +33,7 @@ class WorkMode(StrEnum):
 
 @dataclass(frozen=True)
 class Job:
-	"""A single job posting normalized across all engines."""
+	"""A single job posting."""
 
 	id: str
 	title: str

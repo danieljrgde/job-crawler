@@ -1,4 +1,4 @@
-"""Greenhouse job board engine."""
+"""Greenhouse job board."""
 
 import html
 import logging
@@ -6,14 +6,14 @@ from abc import abstractmethod
 from datetime import datetime
 
 import aiohttp
-from engines.base import Engine
-from jobs import Job
+from job_crawler.board.board import Board
+from job_crawler.job import Job
 
 logger = logging.getLogger(__name__)
 
 
-class GreenHouse(Engine):
-	"""Base class for engines backed by the Greenhouse job board API.
+class GreenHouse(Board):
+	"""Base class for boards backed by the Greenhouse job board API.
 
 	Subclasses provide a ``board_token`` identifying the company's board;
 	the rest of the fetching and error handling is shared. This class is

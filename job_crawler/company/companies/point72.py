@@ -1,9 +1,9 @@
-from companies.base import Company
-from engines import GreenHouse
+from job_crawler.company.company import Company
+from job_crawler.board import GreenHouse
 
 
 class Point72(Company, GreenHouse):
-	"""Greenhouse-backed engine for Point72."""
+	"""Greenhouse-backed recruiting platform for Point72."""
 
 	@property
 	def name(self) -> str:

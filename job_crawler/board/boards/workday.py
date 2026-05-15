@@ -1,9 +1,8 @@
-from __future__ import annotations
-
 import aiohttp
-from engines.base import Engine, Job
+from job_crawler.board.board import Board
+from job_crawler.job import Job
 
 
-class Workday(Engine):
+class Workday(Board):
 	async def get_jobs(self, session: aiohttp.ClientSession) -> list[Job]:
 		return []
