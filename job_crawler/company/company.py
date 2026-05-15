@@ -4,7 +4,7 @@ from abc import ABC, abstractmethod
 class Company(ABC):
 	"""A company whose job postings we crawl.
 
-	Concrete subclasses mix in an ``Engine`` implementation (e.g. ``GreenHouse``)
+	Concrete subclasses mix in a ``Board`` implementation (e.g. ``GreenHouse``)
 	and provide the source-specific configuration plus company metadata.
 	"""
 
