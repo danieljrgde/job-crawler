@@ -54,15 +54,30 @@ Look at the company's careers page URL. Supported boards:
 
 Add a new file under [job_crawler/board/boards/](job_crawler/board/boards/) implementing the `Board` abstract class, then export it from [job_crawler/board/boards/\_\_init\_\_.py](job_crawler/board/boards/__init__.py) and register it in `BOARD_REGISTRY` in [job_crawler/board/\_\_init\_\_.py](job_crawler/board/__init__.py).
 
-**3. Add the company to [job_crawler/company/companies.yaml](job_crawler/company/companies.yaml).**
+**3. Add a YAML file for the company under [job_crawler/company/companies/](job_crawler/company/companies/).**
+
+Companies are organized following the [Global Industry Classification Standard (GICS®)](job_crawler/company/companies/README.md) in a four-level directory hierarchy:
+
+```
+companies/<sector>/<industry-group>/<industry>/<sub-industry>/<company-slug>.yaml
+```
+
+Look up the company's GICS classification and create the file in the right folder:
 
 ```yaml
-- name: Acme Corp
-  logo_url: https://logo.clearbit.com/acme.com
-  website: https://acme.com/
-  board: greenhouse
-  board_args:
-    board_token: acmecorp
+name: Acme Corp
+logo_url: https://logo.clearbit.com/acme.com
+website: https://acme.com/
+
+gics:
+  sector: Information Technology
+  industry_group: Software & Services
+  industry: Software
+  sub_industry: Application Software
+
+board: greenhouse
+board_args:
+  board_token: acmecorp
 ```
 
 The `board_token` is the slug from the Greenhouse URL: `boards.greenhouse.io/<board_token>`. For other boards, `board_args` accepts whatever the board's constructor requires.
