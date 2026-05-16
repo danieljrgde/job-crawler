@@ -1,30 +1,22 @@
-from job_crawler.company.companies.adyen import Adyen as Adyen
-from job_crawler.company.companies.alix_partners import AlixPartners as AlixPartners
-from job_crawler.company.companies.alma import Alma as Alma
-from job_crawler.company.companies.apollo_global_management import ApolloGlobalManagement as ApolloGlobalManagement
-from job_crawler.company.companies.bnp_paribas import BNPParibas as BNPParibas
-from job_crawler.company.companies.capital_fund_management import CapitalFundManagement as CapitalFundManagement
-from job_crawler.company.companies.ebury import Ebury as Ebury
-from job_crawler.company.companies.eqt_partners import EQTPartners as EQTPartners
-from job_crawler.company.companies.flow_traders import FlowTraders as FlowTraders
-from job_crawler.company.companies.ibanfirst import IBanFirst as IBanFirst
-from job_crawler.company.companies.jane_street import JaneStreet as JaneStreet
-from job_crawler.company.companies.jump_trading import JumpTrading as JumpTrading
-from job_crawler.company.companies.lincoln_international import LincolnInternational as LincolnInternational
-from job_crawler.company.companies.mangopay import Mangopay as Mangopay
-from job_crawler.company.companies.n26 import N26 as N26
-from job_crawler.company.companies.optiver import Optiver as Optiver
-from job_crawler.company.companies.permira import Permira as Permira
-from job_crawler.company.companies.point72 import Point72 as Point72
-from job_crawler.company.companies.qube_research_technologies import QubeResearchTechnologies as QubeResearchTechnologies
-from job_crawler.company.companies.shift_technology import ShiftTechnology as ShiftTechnology
-from job_crawler.company.companies.squarepoint_capital import SquarepointCapital as SquarepointCapital
-from job_crawler.company.companies.stripe import Stripe as Stripe
-from job_crawler.company.companies.tower_research_capital import TowerResearchCapital as TowerResearchCapital
-from job_crawler.company.companies.virtu_financial import VirtuFinancial as VirtuFinancial
-from job_crawler.company.companies.worldquant import WorldQuant as WorldQuant
-from job_crawler.company.company import Company
+from pathlib import Path
+
+import yaml
+
+from job_crawler.board import BOARD_REGISTRY
+from job_crawler.company.company import Company as Company
+
+_YAML = Path(__file__).parent / "companies.yaml"
 
 
 def get_companies() -> list[Company]:
-	return [cls() for cls in Company.__subclasses__() if not cls.__abstractmethods__]
+	data = yaml.safe_load(_YAML.read_text())
+	return [
+		Company(
+			name=entry["name"],
+			logo_url=entry["logo_url"],
+			website=entry["website"],
+			board_cls=BOARD_REGISTRY[entry["board"]],
+			board_args=entry.get("board_args", {}),
+		)
+		for entry in data
+	]

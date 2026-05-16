@@ -1,17 +1,21 @@
-from abc import ABC, abstractmethod
+from __future__ import annotations
 
-from job_crawler.board.board import Board
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+	from job_crawler.board.board import Board
 
 
-class Company(ABC):
+class Company:
 	"""A company whose job postings we crawl."""
 
-	name: str
-	logo_url: str
-	website: str
+	def __init__(self, *, name: str, logo_url: str, website: str, board_cls: type[Board], board_args: dict) -> None:
+		self.name = name
+		self.logo_url = logo_url
+		self.website = website
+		self._board_cls = board_cls
+		self._board_args = board_args
 
 	@property
-	@abstractmethod
 	def board(self) -> Board:
-		"""The job board integration used to fetch this company's postings."""
-		...
+		return self._board_cls(company_name=self.name, company_logo_url=self.logo_url, **self._board_args)

@@ -257,6 +257,7 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "aiohttp" },
+    { name = "pyyaml" },
 ]
 
 [package.dev-dependencies]
@@ -268,7 +269,10 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "aiohttp", specifier = ">=3.13.5" }]
+requires-dist = [
+    { name = "aiohttp", specifier = ">=3.13.5" },
+    { name = "pyyaml", specifier = ">=6.0" },
+]
 
 [package.metadata.requires-dev]
 dev = [
