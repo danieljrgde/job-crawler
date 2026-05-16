@@ -1,6 +1,8 @@
 - name: Adyen
   logo_url: https://logo.clearbit.com/adyen.com
   website: https://www.adyen.com/
+  industry: Finance
+  subindustry: Payments Infrastructure
   board: greenhouse
   board_args:
     board_token: adyen
@@ -8,6 +10,8 @@
 - name: AlixPartners
   logo_url: https://logo.clearbit.com/alixpartners.com
   website: https://www.alixpartners.com/
+  industry: Finance
+  subindustry: Management Consulting
   board: greenhouse
   board_args:
     board_token: alixpartners
@@ -15,6 +19,8 @@
 - name: Alma
   logo_url: https://logo.clearbit.com/getalma.eu
   website: https://getalma.eu/
+  industry: Finance
+  subindustry: Consumer Lending
   board: greenhouse
   board_args:
     board_token: alma31
@@ -22,6 +28,8 @@
 - name: Apollo Global Management
   logo_url: https://logo.clearbit.com/apollo.com
   website: https://www.apollo.com/
+  industry: Finance
+  subindustry: Private Equity
   board: greenhouse
   board_args:
     board_token: apollo
@@ -29,6 +37,8 @@
 - name: Capital Fund Management
   logo_url: https://media.licdn.com/dms/image/v2/C4E0BAQHzx8gmbGG0Kg/company-logo_200_200/company-logo_200_200/0/1631344624809?e=2147483647&v=beta&t=zWstaZncYP53wGrc96oDPSGRpYLR37J0mqWpfrOz4hY
   website: https://www.cfm.com/
+  industry: Finance
+  subindustry: Quantitative Hedge Fund
   board: greenhouse
   board_args:
     board_token: cfm
@@ -36,6 +46,8 @@
 - name: Ebury
   logo_url: https://logo.clearbit.com/ebury.com
   website: https://ebury.com/
+  industry: Finance
+  subindustry: FX & Cross-Border Payments
   board: greenhouse
   board_args:
     board_token: ebury
@@ -43,6 +55,8 @@
 - name: EQT Partners
   logo_url: https://logo.clearbit.com/eqtgroup.com
   website: https://eqtgroup.com/
+  industry: Finance
+  subindustry: Private Equity
   board: greenhouse
   board_args:
     board_token: eqtpartners
@@ -50,6 +64,8 @@
 - name: Flow Traders
   logo_url: https://logo.clearbit.com/flowtraders.com
   website: https://www.flowtraders.com/
+  industry: Finance
+  subindustry: Market Making
   board: greenhouse
   board_args:
     board_token: flowtraders
@@ -57,6 +73,8 @@
 - name: iBanFirst
   logo_url: https://logo.clearbit.com/ibanfirst.com
   website: https://www.ibanfirst.com/
+  industry: Finance
+  subindustry: FX & Cross-Border Payments
   board: greenhouse
   board_args:
     board_token: ibanfirst
@@ -64,6 +82,8 @@
 - name: Jane Street
   logo_url: https://logo.clearbit.com/janestreet.com
   website: https://www.janestreet.com/
+  industry: Finance
+  subindustry: Quantitative Trading
   board: greenhouse
   board_args:
     board_token: janestreet
@@ -71,6 +91,8 @@
 - name: Jump Trading
   logo_url: https://logo.clearbit.com/jumptrading.com
   website: https://www.jumptrading.com/
+  industry: Finance
+  subindustry: Quantitative Trading
   board: greenhouse
   board_args:
     board_token: jumptrading
@@ -78,6 +100,8 @@
 - name: Lincoln International
   logo_url: https://logo.clearbit.com/lincolninternational.com
   website: https://lincolninternational.com/
+  industry: Finance
+  subindustry: Investment Banking
   board: greenhouse
   board_args:
     board_token: lincolninternational
@@ -85,6 +109,8 @@
 - name: Mangopay
   logo_url: https://logo.clearbit.com/mangopay.com
   website: https://mangopay.com/
+  industry: Finance
+  subindustry: Payments Infrastructure
   board: greenhouse
   board_args:
     board_token: mangopay
@@ -92,6 +118,8 @@
 - name: N26
   logo_url: https://logo.clearbit.com/n26.com
   website: https://n26.com/
+  industry: Finance
+  subindustry: Neobank
   board: greenhouse
   board_args:
     board_token: n26
@@ -99,6 +127,8 @@
 - name: Optiver
   logo_url: https://logo.clearbit.com/optiver.com
   website: https://optiver.com/
+  industry: Finance
+  subindustry: Market Making
   board: greenhouse
   board_args:
     board_token: optiver
@@ -106,6 +136,8 @@
 - name: Permira
   logo_url: https://logo.clearbit.com/permira.com
   website: https://www.permira.com/
+  industry: Finance
+  subindustry: Private Equity
   board: greenhouse
   board_args:
     board_token: permira
@@ -113,6 +145,8 @@
 - name: Point72
   logo_url: https://media.glassdoor.com/sqll/1032703/point72-squareLogo-1732725839273.png
   website: https://point72.com/
+  industry: Finance
+  subindustry: Hedge Fund
   board: greenhouse
   board_args:
     board_token: point72
@@ -120,6 +154,8 @@
 - name: Qube Research & Technologies
   logo_url: https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/Qube_Research_%26_Technologies_Logo.svg/1280px-Qube_Research_%26_Technologies_Logo.svg.png
   website: http://qube-rt.com/
+  industry: Finance
+  subindustry: Quantitative Hedge Fund
   board: greenhouse
   board_args:
     board_token: quberesearchandtechnologies
@@ -127,6 +163,8 @@
 - name: Shift Technology
   logo_url: https://logo.clearbit.com/shift-technology.com
   website: https://www.shift-technology.com/
+  industry: Finance
+  subindustry: Insurtech
   board: greenhouse
   board_args:
     board_token: shifttechnology
@@ -134,6 +172,8 @@
 - name: Squarepoint Capital
   logo_url: https://logo.clearbit.com/squarepoint-capital.com
   website: https://www.squarepoint-capital.com/
+  industry: Finance
+  subindustry: Quantitative Hedge Fund
   board: greenhouse
   board_args:
     board_token: squarepointcapital
@@ -141,6 +181,8 @@
 - name: Stripe
   logo_url: https://logo.clearbit.com/stripe.com
   website: https://stripe.com/
+  industry: Finance
+  subindustry: Payments Infrastructure
   board: greenhouse
   board_args:
     board_token: stripe
@@ -148,6 +190,8 @@
 - name: Tower Research Capital
   logo_url: https://logo.clearbit.com/tower-research.com
   website: https://tower-research.com/
+  industry: Finance
+  subindustry: Quantitative Trading
   board: greenhouse
   board_args:
     board_token: towerresearchcapital
@@ -155,6 +199,8 @@
 - name: Virtu Financial
   logo_url: https://logo.clearbit.com/virtu.com
   website: https://www.virtu.com/
+  industry: Finance
+  subindustry: Market Making
   board: greenhouse
   board_args:
     board_token: virtu
@@ -162,6 +208,8 @@
 - name: WorldQuant
   logo_url: https://logo.clearbit.com/worldquant.com
   website: https://www.worldquant.com/
+  industry: Finance
+  subindustry: Quantitative Hedge Fund
   board: greenhouse
   board_args:
     board_token: worldquant
