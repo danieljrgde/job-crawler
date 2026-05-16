@@ -1,11 +1,11 @@
 import pytest
 import aiohttp
-from job_crawler.company.companies.capital_fund_management import CapitalFundManagement
+from job_crawler.company.companies.shift_technology import ShiftTechnology
 
 
 @pytest.fixture
 def company():
-    return CapitalFundManagement()
+    return ShiftTechnology()
 
 
 @pytest.mark.asyncio
@@ -23,4 +23,4 @@ async def test_job_fields_populated(company):
         assert job.id
         assert job.title
         assert job.link
-        assert job.company_name == "Capital Fund Management"
+        assert job.company_name == "Shift Technology"

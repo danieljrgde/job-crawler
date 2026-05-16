@@ -2,7 +2,6 @@
 
 import html
 import logging
-from abc import abstractmethod
 from datetime import datetime
 
 import aiohttp
@@ -13,25 +12,14 @@ logger = logging.getLogger(__name__)
 
 
 class GreenHouse(Board):
-	"""Base class for boards backed by the Greenhouse job board API.
-
-	Subclasses provide a ``board_token`` identifying the company's board;
-	the rest of the fetching and error handling is shared. This class is
-	intended to be mixed with ``Company``, which supplies ``name`` and
-	``logo_url`` used when constructing ``Job`` instances.
-	"""
+	"""Board backed by the Greenhouse job board API."""
 
 	_BASE_URL = "https://boards-api.greenhouse.io/v1/boards/{board_token}/jobs?content=true"
 
-	# Provided by the ``Company`` mixin in concrete subclasses.
-	name: str
-	logo_url: str
-
-	@property
-	@abstractmethod
-	def board_token(self) -> str:
-		"""The Greenhouse board token for the company (e.g. ``"airbnb"``)."""
-		...
+	def __init__(self, board_token: str, company_name: str, company_logo_url: str) -> None:
+		self.board_token = board_token
+		self.company_name = company_name
+		self.company_logo_url = company_logo_url
 
 	async def _fetch_jobs(self, session: aiohttp.ClientSession, url: str) -> dict:
 		async with session.get(url) as response:
@@ -51,8 +39,8 @@ class GreenHouse(Board):
 			date_posted=datetime.fromisoformat(first_published) if first_published else None,
 			date_modified=datetime.fromisoformat(updated_at) if updated_at else None,
 			contract_type=None,
-			company_name=self.name,
-			company_logo_url=self.logo_url,
+			company_name=self.company_name,
+			company_logo_url=self.company_logo_url,
 			work_mode=None,
 			link=data["absolute_url"],
 		)

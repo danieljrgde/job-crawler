@@ -1,26 +1,12 @@
+from job_crawler.board.boards.greenhouse import GreenHouse
 from job_crawler.company.company import Company
-from job_crawler.board import GreenHouse
 
 
-class QubeResearchTechnologies(Company, GreenHouse):
-	"""Greenhouse-backed recruiting platform for Qube Research & Technologies."""
-
-	@property
-	def name(self) -> str:
-		"""Human-readable company name."""
-		return "Qube Research & Technologies"
+class QubeResearchTechnologies(Company):
+	name = "Qube Research & Technologies"
+	logo_url = "https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/Qube_Research_%26_Technologies_Logo.svg/1280px-Qube_Research_%26_Technologies_Logo.svg.png"
+	website = "http://qube-rt.com/"
 
 	@property
-	def logo_url(self) -> str:
-		"""URL of the company logo."""
-		return "https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/Qube_Research_%26_Technologies_Logo.svg/1280px-Qube_Research_%26_Technologies_Logo.svg.png"
-
-	@property
-	def website(self) -> str:
-		"""Company website URL."""
-		return "http://qube-rt.com/"
-
-	@property
-	def board_token(self) -> str:
-		"""Greenhouse board token for Qube Research & Technologies."""
-		return "quberesearchandtechnologies"
+	def board(self) -> GreenHouse:
+		return GreenHouse(board_token="quberesearchandtechnologies", company_name=self.name, company_logo_url=self.logo_url)

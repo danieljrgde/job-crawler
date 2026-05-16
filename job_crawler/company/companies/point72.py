@@ -1,26 +1,12 @@
+from job_crawler.board.boards.greenhouse import GreenHouse
 from job_crawler.company.company import Company
-from job_crawler.board import GreenHouse
 
 
-class Point72(Company, GreenHouse):
-	"""Greenhouse-backed recruiting platform for Point72."""
-
-	@property
-	def name(self) -> str:
-		"""Human-readable company name."""
-		return "Point72"
+class Point72(Company):
+	name = "Point72"
+	logo_url = "https://media.glassdoor.com/sqll/1032703/point72-squareLogo-1732725839273.png"
+	website = "https://point72.com/"
 
 	@property
-	def logo_url(self) -> str:
-		"""URL of the company logo."""
-		return "https://media.glassdoor.com/sqll/1032703/point72-squareLogo-1732725839273.png"
-
-	@property
-	def website(self) -> str:
-		"""Company website URL."""
-		return "https://point72.com/"
-
-	@property
-	def board_token(self) -> str:
-		"""Greenhouse board token for Point72."""
-		return "point72"
+	def board(self) -> GreenHouse:
+		return GreenHouse(board_token="point72", company_name=self.name, company_logo_url=self.logo_url)
