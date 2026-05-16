@@ -1,0 +1,13 @@
+name: Qube Research & Technologies
+logo_url: https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/Qube_Research_%26_Technologies_Logo.svg/1280px-Qube_Research_%26_Technologies_Logo.svg.png
+website: http://qube-rt.com/
+
+gics:
+  sector: Financials
+  industry_group: Diversified Financials
+  industry: Capital Markets
+  sub_industry: Asset Management & Custody Banks
+
+board: greenhouse
+board_args:
+  board_token: quberesearchandtechnologies

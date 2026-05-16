@@ -1,0 +1,13 @@
+name: Virtu Financial
+logo_url: https://logo.clearbit.com/virtu.com
+website: https://www.virtu.com/
+
+gics:
+  sector: Financials
+  industry_group: Diversified Financials
+  industry: Capital Markets
+  sub_industry: Investment Banking & Brokerage
+
+board: greenhouse
+board_args:
+  board_token: virtu

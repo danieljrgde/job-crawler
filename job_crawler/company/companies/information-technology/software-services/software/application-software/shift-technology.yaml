@@ -1,0 +1,13 @@
+name: Shift Technology
+logo_url: https://logo.clearbit.com/shift-technology.com
+website: https://www.shift-technology.com/
+
+gics:
+  sector: Information Technology
+  industry_group: Software & Services
+  industry: Software
+  sub_industry: Application Software
+
+board: greenhouse
+board_args:
+  board_token: shifttechnology

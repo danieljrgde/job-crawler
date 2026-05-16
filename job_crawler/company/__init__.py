@@ -5,11 +5,10 @@ import yaml
 from job_crawler.board import BOARD_REGISTRY
 from job_crawler.company.company import Company as Company
 
-_YAML = Path(__file__).parent / "companies.yaml"
+_COMPANIES_DIR = Path(__file__).parent / "companies"
 
 
 def get_companies() -> list[Company]:
-	data = yaml.safe_load(_YAML.read_text())
 	return [
 		Company(
 			name=entry["name"],
@@ -18,5 +17,6 @@ def get_companies() -> list[Company]:
 			board_cls=BOARD_REGISTRY[entry["board"]],
 			board_args=entry.get("board_args", {}),
 		)
-		for entry in data
+		for path in sorted(_COMPANIES_DIR.rglob("*.yaml"))
+		for entry in [yaml.safe_load(path.read_text())]
 	]

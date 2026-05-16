@@ -1,0 +1,13 @@
+name: Jane Street
+logo_url: https://logo.clearbit.com/janestreet.com
+website: https://www.janestreet.com/
+
+gics:
+  sector: Financials
+  industry_group: Diversified Financials
+  industry: Capital Markets
+  sub_industry: Investment Banking & Brokerage
+
+board: greenhouse
+board_args:
+  board_token: janestreet

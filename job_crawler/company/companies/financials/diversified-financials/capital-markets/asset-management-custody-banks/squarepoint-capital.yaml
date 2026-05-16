@@ -1,0 +1,13 @@
+name: Squarepoint Capital
+logo_url: https://logo.clearbit.com/squarepoint-capital.com
+website: https://www.squarepoint-capital.com/
+
+gics:
+  sector: Financials
+  industry_group: Diversified Financials
+  industry: Capital Markets
+  sub_industry: Asset Management & Custody Banks
+
+board: greenhouse
+board_args:
+  board_token: squarepointcapital

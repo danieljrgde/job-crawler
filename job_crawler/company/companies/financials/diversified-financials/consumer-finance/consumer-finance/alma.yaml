@@ -1,0 +1,13 @@
+name: Alma
+logo_url: https://logo.clearbit.com/getalma.eu
+website: https://getalma.eu/
+
+gics:
+  sector: Financials
+  industry_group: Diversified Financials
+  industry: Consumer Finance
+  sub_industry: Consumer Finance
+
+board: greenhouse
+board_args:
+  board_token: alma31

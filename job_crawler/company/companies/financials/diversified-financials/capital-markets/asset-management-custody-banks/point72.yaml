@@ -1,0 +1,13 @@
+name: Point72
+logo_url: https://media.glassdoor.com/sqll/1032703/point72-squareLogo-1732725839273.png
+website: https://point72.com/
+
+gics:
+  sector: Financials
+  industry_group: Diversified Financials
+  industry: Capital Markets
+  sub_industry: Asset Management & Custody Banks
+
+board: greenhouse
+board_args:
+  board_token: point72

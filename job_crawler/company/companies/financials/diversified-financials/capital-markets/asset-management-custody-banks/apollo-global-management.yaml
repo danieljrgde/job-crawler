@@ -1,0 +1,13 @@
+name: Apollo Global Management
+logo_url: https://logo.clearbit.com/apollo.com
+website: https://www.apollo.com/
+
+gics:
+  sector: Financials
+  industry_group: Diversified Financials
+  industry: Capital Markets
+  sub_industry: Asset Management & Custody Banks
+
+board: greenhouse
+board_args:
+  board_token: apollo

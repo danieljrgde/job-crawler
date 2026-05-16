@@ -1,0 +1,13 @@
+name: AlixPartners
+logo_url: https://logo.clearbit.com/alixpartners.com
+website: https://www.alixpartners.com/
+
+gics:
+  sector: Industrials
+  industry_group: Commercial & Professional Services
+  industry: Professional Services
+  sub_industry: Research & Consulting Services
+
+board: greenhouse
+board_args:
+  board_token: alixpartners

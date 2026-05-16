@@ -1,0 +1,13 @@
+name: Permira
+logo_url: https://logo.clearbit.com/permira.com
+website: https://www.permira.com/
+
+gics:
+  sector: Financials
+  industry_group: Diversified Financials
+  industry: Capital Markets
+  sub_industry: Asset Management & Custody Banks
+
+board: greenhouse
+board_args:
+  board_token: permira

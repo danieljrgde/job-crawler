@@ -1,0 +1,13 @@
+name: Flow Traders
+logo_url: https://logo.clearbit.com/flowtraders.com
+website: https://www.flowtraders.com/
+
+gics:
+  sector: Financials
+  industry_group: Diversified Financials
+  industry: Capital Markets
+  sub_industry: Investment Banking & Brokerage
+
+board: greenhouse
+board_args:
+  board_token: flowtraders

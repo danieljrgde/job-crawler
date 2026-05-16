@@ -1,0 +1,13 @@
+name: iBanFirst
+logo_url: https://logo.clearbit.com/ibanfirst.com
+website: https://www.ibanfirst.com/
+
+gics:
+  sector: Financials
+  industry_group: Diversified Financials
+  industry: Diversified Financial Services
+  sub_industry: Specialized Finance
+
+board: greenhouse
+board_args:
+  board_token: ibanfirst

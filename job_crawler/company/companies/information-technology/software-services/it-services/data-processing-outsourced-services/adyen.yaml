@@ -1,0 +1,13 @@
+name: Adyen
+logo_url: https://logo.clearbit.com/adyen.com
+website: https://www.adyen.com/
+
+gics:
+  sector: Information Technology
+  industry_group: Software & Services
+  industry: IT Services
+  sub_industry: Data Processing & Outsourced Services
+
+board: greenhouse
+board_args:
+  board_token: adyen

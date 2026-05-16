@@ -1,0 +1,13 @@
+name: N26
+logo_url: https://logo.clearbit.com/n26.com
+website: https://n26.com/
+
+gics:
+  sector: Financials
+  industry_group: Banks
+  industry: Banks
+  sub_industry: Diversified Banks
+
+board: greenhouse
+board_args:
+  board_token: n26

@@ -1,0 +1,13 @@
+name: Jump Trading
+logo_url: https://logo.clearbit.com/jumptrading.com
+website: https://www.jumptrading.com/
+
+gics:
+  sector: Financials
+  industry_group: Diversified Financials
+  industry: Capital Markets
+  sub_industry: Investment Banking & Brokerage
+
+board: greenhouse
+board_args:
+  board_token: jumptrading

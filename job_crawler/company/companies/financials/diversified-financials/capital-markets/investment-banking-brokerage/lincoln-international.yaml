@@ -1,0 +1,13 @@
+name: Lincoln International
+logo_url: https://logo.clearbit.com/lincolninternational.com
+website: https://lincolninternational.com/
+
+gics:
+  sector: Financials
+  industry_group: Diversified Financials
+  industry: Capital Markets
+  sub_industry: Investment Banking & Brokerage
+
+board: greenhouse
+board_args:
+  board_token: lincolninternational
