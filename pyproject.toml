@@ -45,6 +45,9 @@ cache-dir = ".cache/ruff"
 
 # --- LINT --------------------- #
 
+[tool.ruff.lint.isort]
+known-first-party = ["job_crawler", "conftest"]
+
 [tool.ruff.lint]
 
 # Rules selection
