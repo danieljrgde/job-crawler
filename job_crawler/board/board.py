@@ -4,9 +4,9 @@ from abc import ABC, abstractmethod
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    import aiohttp
+	import aiohttp
 
-    from job_crawler.job.job import Job
+	from job_crawler.job.job import Job
 
 
 class Board(ABC):

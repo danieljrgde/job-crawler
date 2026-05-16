@@ -3,14 +3,18 @@ repos:
     rev: v0.11.10
     hooks:
       - id: ruff
+        args: [--fix]
+        pass_filenames: false
+        always_run: true
       - id: ruff-format
-        args: [--check]
+        pass_filenames: false
+        always_run: true
 
   - repo: local
     hooks:
       - id: pytest
         name: pytest
-        entry: pytest tests/
+        entry: pytest tests/ -v
         language: system
         pass_filenames: false
         always_run: true

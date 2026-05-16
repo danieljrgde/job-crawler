@@ -32,13 +32,8 @@ packages = ["job_crawler"]
 
 [tool.ruff]
 
-# Files to include in the check.
-include = [
-    "pyproject.toml",
-    "job_crawler/**/*.py",
-    "tests/**/*.py",
-]
 exclude = [
+    "**/migrations/*",
 ]
 
 # Params
@@ -89,6 +84,9 @@ ignore = [
 
     # flake8-async (ASYNC)
     "ASYNC109", # Async function with timeout parameter (used correctly via aiohttp.ClientTimeout)
+
+    # flake8-commas (COM)
+    "COM812",   # Trailing comma missing (conflicts with ruff formatter)
 
 ]
 

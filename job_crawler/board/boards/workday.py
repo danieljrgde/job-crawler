@@ -5,8 +5,8 @@ from job_crawler.job import Job
 
 
 class Workday(Board):
-    def __init__(self):
-        pass
+	def __init__(self):
+		pass
 
-    async def get_jobs(self, _session: aiohttp.ClientSession) -> list[Job]:
-        return []
+	async def get_jobs(self, _session: aiohttp.ClientSession) -> list[Job]:
+		return []
