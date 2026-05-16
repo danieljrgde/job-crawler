@@ -5,6 +5,7 @@ import logging
 from datetime import datetime
 
 import aiohttp
+
 from job_crawler.board.board import Board
 from job_crawler.job import Job
 

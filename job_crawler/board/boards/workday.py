@@ -8,5 +8,5 @@ class Workday(Board):
     def __init__(self):
         pass
 
-    async def get_jobs(self, session: aiohttp.ClientSession) -> list[Job]:
+    async def get_jobs(self, _session: aiohttp.ClientSession) -> list[Job]:
         return []

@@ -3,9 +3,9 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 from typing import TYPE_CHECKING
 
-import aiohttp
-
 if TYPE_CHECKING:
+    import aiohttp
+
     from job_crawler.job.job import Job
 
 

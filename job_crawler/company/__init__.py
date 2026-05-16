@@ -1,30 +1,30 @@
-from job_crawler.company.companies.adyen import Adyen
-from job_crawler.company.companies.alix_partners import AlixPartners
-from job_crawler.company.companies.alma import Alma
-from job_crawler.company.companies.apollo_global_management import ApolloGlobalManagement
-from job_crawler.company.companies.bnp_paribas import BNPParibas
-from job_crawler.company.companies.capital_fund_management import CapitalFundManagement
-from job_crawler.company.companies.ebury import Ebury
-from job_crawler.company.companies.eqt_partners import EQTPartners
-from job_crawler.company.companies.flow_traders import FlowTraders
-from job_crawler.company.companies.ibanfirst import IBanFirst
-from job_crawler.company.companies.jane_street import JaneStreet
-from job_crawler.company.companies.jump_trading import JumpTrading
-from job_crawler.company.companies.lincoln_international import LincolnInternational
-from job_crawler.company.companies.mangopay import Mangopay
-from job_crawler.company.companies.n26 import N26
-from job_crawler.company.companies.optiver import Optiver
-from job_crawler.company.companies.permira import Permira
-from job_crawler.company.companies.point72 import Point72
-from job_crawler.company.companies.qube_research_technologies import QubeResearchTechnologies
-from job_crawler.company.companies.shift_technology import ShiftTechnology
-from job_crawler.company.companies.squarepoint_capital import SquarepointCapital
-from job_crawler.company.companies.stripe import Stripe
-from job_crawler.company.companies.tower_research_capital import TowerResearchCapital
-from job_crawler.company.companies.virtu_financial import VirtuFinancial
-from job_crawler.company.companies.worldquant import WorldQuant
+from job_crawler.company.companies.adyen import Adyen as Adyen
+from job_crawler.company.companies.alix_partners import AlixPartners as AlixPartners
+from job_crawler.company.companies.alma import Alma as Alma
+from job_crawler.company.companies.apollo_global_management import ApolloGlobalManagement as ApolloGlobalManagement
+from job_crawler.company.companies.bnp_paribas import BNPParibas as BNPParibas
+from job_crawler.company.companies.capital_fund_management import CapitalFundManagement as CapitalFundManagement
+from job_crawler.company.companies.ebury import Ebury as Ebury
+from job_crawler.company.companies.eqt_partners import EQTPartners as EQTPartners
+from job_crawler.company.companies.flow_traders import FlowTraders as FlowTraders
+from job_crawler.company.companies.ibanfirst import IBanFirst as IBanFirst
+from job_crawler.company.companies.jane_street import JaneStreet as JaneStreet
+from job_crawler.company.companies.jump_trading import JumpTrading as JumpTrading
+from job_crawler.company.companies.lincoln_international import LincolnInternational as LincolnInternational
+from job_crawler.company.companies.mangopay import Mangopay as Mangopay
+from job_crawler.company.companies.n26 import N26 as N26
+from job_crawler.company.companies.optiver import Optiver as Optiver
+from job_crawler.company.companies.permira import Permira as Permira
+from job_crawler.company.companies.point72 import Point72 as Point72
+from job_crawler.company.companies.qube_research_technologies import QubeResearchTechnologies as QubeResearchTechnologies
+from job_crawler.company.companies.shift_technology import ShiftTechnology as ShiftTechnology
+from job_crawler.company.companies.squarepoint_capital import SquarepointCapital as SquarepointCapital
+from job_crawler.company.companies.stripe import Stripe as Stripe
+from job_crawler.company.companies.tower_research_capital import TowerResearchCapital as TowerResearchCapital
+from job_crawler.company.companies.virtu_financial import VirtuFinancial as VirtuFinancial
+from job_crawler.company.companies.worldquant import WorldQuant as WorldQuant
 from job_crawler.company.company import Company
 
 
 def get_companies() -> list[Company]:
-    return [cls() for cls in Company.__subclasses__() if not cls.__abstractmethods__]
+	return [cls() for cls in Company.__subclasses__() if not cls.__abstractmethods__]

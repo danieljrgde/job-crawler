@@ -1,5 +1,6 @@
-import pytest
 import aiohttp
+import pytest
+
 from job_crawler.company.companies.apollo_global_management import ApolloGlobalManagement
 
 
