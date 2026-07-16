@@ -7,7 +7,7 @@ from datetime import datetime
 import aiohttp
 
 from job_crawler.board.board import Board
-from job_crawler.job import Job
+from job_crawler.job.job import Job, Location
 
 logger = logging.getLogger(__name__)
 
@@ -36,7 +36,8 @@ class GreenHouse(Board):
 			title=data["title"],
 			description=html.unescape(data.get("content", "")),
 			department=None,
-			location=[data["location"]["name"]],
+			# Greenhouse only exposes a single free-text location name.
+			location=[Location(country=None, state=None, city=data["location"]["name"])],
 			date_posted=datetime.fromisoformat(first_published) if first_published else None,
 			date_modified=datetime.fromisoformat(updated_at) if updated_at else None,
 			contract_type=None,

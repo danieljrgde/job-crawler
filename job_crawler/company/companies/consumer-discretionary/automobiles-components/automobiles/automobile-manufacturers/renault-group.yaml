@@ -1,0 +1,15 @@
+name: Renault Group
+logo_url: https://logo.clearbit.com/renaultgroup.com
+website: https://www.renaultgroup.com/
+
+gics:
+  sector: Consumer Discretionary
+  industry_group: Automobiles & Components
+  industry: Automobiles
+  sub_industry: Automobile Manufacturers
+
+board: workday
+board_args:
+  tenant: alliancewd
+  instance: wd3
+  site: renault-group-careers

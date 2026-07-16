@@ -32,6 +32,15 @@ class WorkMode(StrEnum):
 
 
 @dataclass(frozen=True)
+class Location:
+	"""A job posting location; parts not exposed by a board are ``None``."""
+
+	country: str | None
+	state: str | None
+	city: str | None
+
+
+@dataclass(frozen=True)
 class Job:
 	"""A single job posting."""
 
@@ -39,7 +48,7 @@ class Job:
 	title: str
 	description: str
 	department: str | None
-	location: list[str]
+	location: list[Location]
 	date_posted: datetime | None
 	date_modified: datetime | None
 	contract_type: ContractType | None
